@@ -1,0 +1,141 @@
+/* App.css */
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9fafb; /* gris clair */
+  color: #374151; /* gris foncé */
+  padding: 0 1rem;
+}
+
+.app-content {
+  width: 100%;
+  max-width: 64rem; /* env. max-w-4xl */
+}
+
+.app-title {
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.app-subtitle {
+  font-size: 1.125rem; /* text-xl */
+  text-align: center;
+  color: #6b7280; /* gris moyen */
+  margin-bottom: 1.5rem;
+}
+
+/* DiagramViewer styles */
+
+.diagram-viewer {
+  background-color: #fff;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  width: 100%;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+@media(min-width: 640px) {
+  .input-group {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.input {
+  border: 1px solid #d1d5db; /* gris */
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.375rem;
+  flex-grow: 1;
+  font-size: 1rem;
+  outline: none;
+}
+
+.input:focus {
+  border-color: #3b82f6; /* bleu */
+  box-shadow: 0 0 0 2px rgba(59,130,246,0.5);
+}
+
+.button {
+  background-color: #2563eb; /* bleu */
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+@media(min-width: 640px) {
+  .button {
+    width: auto;
+  }
+}
+
+.button:hover {
+  background-color: #1e40af; /* bleu plus foncé */
+}
+
+.error-message {
+  background-color: #fee2e2; /* rouge clair */
+  color: #b91c1c; /* rouge foncé */
+  padding: 0.75rem 1rem;
+  border-radius: 0.375rem;
+  border: 1px solid #fecaca;
+  margin-bottom: 1rem;
+}
+
+.diagram-block {
+  margin: 1.5rem 0;
+}
+
+.diagram-title {
+  font-weight: 600;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+.diagram-container {
+  overflow: auto;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  padding: 0.5rem;
+  background-color: #f9fafb;
+}
+
+.loading-spinner {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1rem 0;
+  font-style: italic;
+  color: #374151;
+}
+
+.spinner {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #3b82f6;
+  border-top: 2px solid transparent;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
