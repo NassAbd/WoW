@@ -1,4 +1,3 @@
-# backend/app.py
 from flask import Flask, request, jsonify
 from inheritance_parser import generate_mermaid_diagram
 from flask_cors import CORS

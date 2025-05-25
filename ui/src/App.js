@@ -1,5 +1,5 @@
 import DiagramViewer from "./DiagramViewer";
-import "./App.css"; // fichier CSS associé
+import "./App.css";
 
 function App() {
   return (

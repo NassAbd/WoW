@@ -25,7 +25,6 @@ function DiagramViewer() {
       } else {
         setDiagrams(res.data);
 
-        // Sauvegarde dans le localStorage
         localStorage.setItem("diagrams", JSON.stringify(res.data));
         localStorage.setItem("module", module);
       }

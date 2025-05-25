@@ -11,7 +11,7 @@ services:
       - backend/.env
     volumes:
       - ./backend:/app
-      - ../woob/modules:/app/woob/modules  # <-- Mount host folder inside container
+      - ../woob/modules:/app/woob/modules
     environment:
       - W_ROOT=/app/woob/modules  
     restart: unless-stopped
