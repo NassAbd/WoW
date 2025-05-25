@@ -1,7 +1,10 @@
 import os
 import re
+from dotenv import load_dotenv
 
-W_ROOT = "../woob/modules"
+load_dotenv()
+
+W_ROOT = os.getenv("W_ROOT")
 
 def get_browser_path(module_name):
     module_root = os.path.join(W_ROOT, module_name)
