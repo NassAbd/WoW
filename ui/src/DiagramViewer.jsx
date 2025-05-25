@@ -29,7 +29,7 @@ function DiagramViewer() {
         localStorage.setItem("module", module);
       }
     } catch (e) {
-      setError("Erreur réseau ou serveur : " + e.message);
+      setError("Servor Error : " + e.message);
     } finally {
       setLoading(false);
     }
